@@ -1,0 +1,29 @@
+server:
+  port: 8084
+
+# h2는 MYSQL의 쿼리를 수행해도 정상적으로 작동하기 때문에 MYSQL 모드로 실행해보도록 한다. (ex. test_id integer not null auto_increment)
+spring:
+  datasource:
+    hikari:
+     jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL # url만 있어도 된다.
+#     username: sa
+#     password: 
+#     driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect # h2를 MYSQL 모드로 실행했을 때 출력되는 쿼리 로그를 MYSQL 버전으로 변경
+        storage_engine: innodb
+        format_sql: true # To beautify or pretty print the SQL
+        show_sql: true # show sql
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    org.hibernate:
+      type.descriptor.sql: trace # show parameter binding
+      SQL: DEBUG
