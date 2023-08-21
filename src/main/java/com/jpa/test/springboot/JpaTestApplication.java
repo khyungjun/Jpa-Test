@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JpaTestApplication {
 
-	// Âü°í : https://velog.io/@sheltonwon/Spring-Boot-MariaDB-JPA-%EA%B0%84%EB%8B%A8-%EC%98%88%EC%8B%9C
+	// ì°¸ê³  : https://velog.io/@sheltonwon/Spring-Boot-MariaDB-JPA-%EA%B0%84%EB%8B%A8-%EC%98%88%EC%8B%9C
 	public static void main(String[] args) {
 		SpringApplication.run(JpaTestApplication.class, args);
 	}
