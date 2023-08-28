@@ -1,6 +1,3 @@
-server:
-  port: 8084
-
 # h2는 MYSQL의 쿼리를 수행해도 정상적으로 작동하기 때문에 MYSQL 모드로 실행해보도록 한다. (ex. test_id integer not null auto_increment)
 spring:
   datasource:
