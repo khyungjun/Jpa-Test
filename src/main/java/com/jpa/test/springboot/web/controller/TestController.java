@@ -14,12 +14,13 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @RequestMapping("/test")
 public class TestController {
+	
 	private final TestService testService;
 
     @GetMapping("/test/{str}")
     public String test(@PathVariable String str) {
         TestDto res = testService.testServiceMethod(str);
 
-        return "hello "+res.getTestStr() ;
+        return "hello " + res.getTestStr() ;
     }
 }
