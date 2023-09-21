@@ -12,6 +12,7 @@ import lombok.RequiredArgsConstructor;
 @Component
 @RequiredArgsConstructor
 public class TestService {
+	
     private final TestRepository testRepository;
 
     public TestDto testServiceMethod(String str) {
