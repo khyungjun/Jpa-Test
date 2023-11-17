@@ -1,4 +1,4 @@
-package com.jpa.test.springboot.web.entity;
+package com.jpa.test.springboot.web.domain;
 
 import javax.persistence.*;
 
@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
 @EntityListeners(AuditingEntityListener.class)
-public class Test {
+public class Test { //출처 : https://velog.io/@sheltonwon/Spring-Boot-MariaDB-JPA-%EA%B0%84%EB%8B%A8-%EC%98%88%EC%8B%9C
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
