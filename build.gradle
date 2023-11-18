@@ -43,6 +43,10 @@ dependencies {
     // log4j
     //implementation 'org.springframework.boot:spring-boot-starter-log4j2'
     
+    
+    // 로그에 ?'에 바인딩되는 값을 확인 (출처 : https://github.com/gavlyukovskiy/spring-boot-data-source-decorator#quick-start)
+    implementation "com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.7.1"
+    
     // h2 (in-memory db)
 	runtimeOnly 'com.h2database:h2'
 	
